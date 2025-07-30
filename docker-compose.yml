@@ -1,0 +1,13 @@
+# docker-compose.yml
+
+services:
+  technitium-dns:
+    image: technitium/dns-server:13.6.0
+    container_name: dns-lab
+    ports:
+      - "5380:5380/tcp"  # Web UI
+      - "53:53/udp"      # DNS Standard
+      - "53:53/tcp"      # DNS Standard
+    volumes:
+      - ./dns-config:/etc/dns
+    restart: unless-stopped
