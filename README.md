@@ -57,7 +57,7 @@ Une fois le serveur démarré, une configuration initiale via l'interface web es
 
 ## Utilisation par les Étudiants
 
-1.  Communiquez l'URL (`http://<IP_DU_SERVEUR>:5380`) et le mot de passe administrateur aux étudiants.
+1.  Communiquez l'URL (`http://<IP_DU_SERVEUR>:5380`) et le mot de passe administrateur aux étudiants (`admin/netlab123`).
 2.  Les étudiants peuvent se connecter et créer leurs propres zones DNS dans la section **Zones**.
 3.  Pour chaque zone (ex: `projet-kevin.lab`), ils peuvent ajouter tous les enregistrements nécessaires (`A`, `AAAA`, `CNAME`, `TXT`, etc.), y compris des `NS` et `Glue Records` pour déléguer des sous-domaines.
 
@@ -83,4 +83,5 @@ docker-compose logs -f
 # Lister les conteneurs en cours d'exécution
 docker-compose ps
 ```
+
 
