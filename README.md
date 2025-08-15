@@ -24,18 +24,21 @@ Ce projet permet de déployer un serveur DNS centralisé pour tout le laboratoir
 
 ## Installation et Déploiement
 
-1.  Clonez ce projet ou créez un répertoire et placez-y les fichiers nécessaires. La structure doit ressembler à ceci :
-
+1.  Clonez ce projet :
+    ```bash
+    git clone https://github.com/manastria/docker-dns.git
+    ````
+    
 2.  Lancez le serveur en arrière-plan depuis le répertoire `dns-lab` :
 
     ```bash
-    docker-compose up -d
+    docker compose up -d
     ```
 
 3.  Vérifiez que le conteneur est bien en cours d'exécution :
 
     ```bash
-    docker-compose ps
+    docker compose ps
     ```
 
 ## Première Configuration
@@ -80,3 +83,4 @@ docker-compose logs -f
 # Lister les conteneurs en cours d'exécution
 docker-compose ps
 ```
+
